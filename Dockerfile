@@ -31,7 +31,7 @@ RUN apk add --no-cache \
 # Install PECL and PEAR extensions
 RUN pecl install \
   imagick \
-  xdebug
+  xdebug-beta
 RUN pear install PHP_CodeSniffer
 
 # Install and enable php extensions
