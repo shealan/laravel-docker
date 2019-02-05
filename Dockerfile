@@ -19,6 +19,7 @@ RUN apk add --no-cache \
   git \
   imagemagick \
   libc-dev \
+  libzip-dev \
   libpng-dev \
   make \
   mysql-client \
@@ -32,7 +33,8 @@ RUN apk add --no-cache \
 RUN pecl install \
   imagick \
   xdebug-beta
-RUN pear install PHP_CodeSniffer
+
+RUN docker-php-ext-configure zip --with-libzip
 
 # Install and enable php extensions
 RUN docker-php-ext-enable \
