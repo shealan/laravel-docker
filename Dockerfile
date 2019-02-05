@@ -50,7 +50,6 @@ RUN docker-php-ext-install \
     tokenizer \
     xml \
     gd \
-    exif \
     zip \
     bcmath
 
