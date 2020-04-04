@@ -1,4 +1,4 @@
-FROM php:alpine:3.9
+FROM alpine:3.9
 
 # Install dev dependencies
 RUN apk add --no-cache --virtual .build-deps \
